@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="allPane" maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TableViewHelper">
+   <children>
+      <Button fx:id="deleteTask" layoutX="330.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" text="Удалить Задачу" />
+      <Button fx:id="addTask" layoutX="176.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" text="Добавить Задачу" />
+      <TextField fx:id="nameTask" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="99.0" promptText="Заголовок" />
+      <TextField fx:id="description" layoutX="124.0" layoutY="14.0" prefHeight="25.0" prefWidth="99.0" promptText="Описание" />
+      <TextField fx:id="priority" layoutX="237.0" layoutY="14.0" prefHeight="25.0" prefWidth="99.0" promptText="Приоритет" />
+      <TextField fx:id="dateOfCreation" layoutX="348.0" layoutY="14.0" prefHeight="25.0" prefWidth="99.0" promptText="Дата создания" />
+      <TextField fx:id="expirationDate" layoutX="462.0" layoutY="14.0" prefHeight="25.0" prefWidth="124.0" promptText="Срок выполнения" />
+      <TextField fx:id="doerName" layoutX="125.0" layoutY="50.0" prefHeight="25.0" prefWidth="148.0" promptText="Исполнитель" />
+      <TextField fx:id="readinesMark" layoutX="291.0" layoutY="50.0" prefHeight="25.0" prefWidth="148.0" promptText="Отметка о выполнении" />
+      <TableView fx:id="allTasksTable" layoutY="88.0" prefHeight="264.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="75.0" text="Заголовок" />
+          <TableColumn fx:id="descriptionColumn" prefWidth="74.0" text="Описание" />
+            <TableColumn fx:id="prioritetyColumn" prefWidth="70.0" text="Приоритет" />
+            <TableColumn fx:id="dateOfCreationColumn" prefWidth="98.0" text="Дата Создания" />
+            <TableColumn fx:id="expirationTimeColumn" prefWidth="92.0" text="Срок Выполнения" />
+            <TableColumn fx:id="doerNameColumn" prefWidth="83.0" text="Исполнитель" />
+            <TableColumn fx:id="readinesMarkColumn" prefWidth="107.0" text="Отметка о Выполнении" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

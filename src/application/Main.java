@@ -6,13 +6,16 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-// не сделал удаление еще и не все ограничения по вводимым данным
-
 public class Main extends Application {
+
+	public static void main(String[] args) {
+		launch(args);
+	}
+
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-			Parent root = FXMLLoader.load(getClass().getResource("myForm.fxml"));
+			Parent root = FXMLLoader.load(getClass().getResource("../view/myForm.fxml"));
 			primaryStage.setTitle("Добро пожаловать!");
 			primaryStage.setScene(new Scene(root, 650, 400));
 			primaryStage.setMinWidth(650);
@@ -23,7 +26,4 @@ public class Main extends Application {
 		}
 	}
 
-	public static void main(String[] args) {
-		launch(args);
-	}
 }
